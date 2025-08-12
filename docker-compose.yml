@@ -1,5 +1,3 @@
----
-version: "2.2"
 services:
   asset-upnp:
     image: "ckware/asset-upnp"
