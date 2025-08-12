@@ -8,7 +8,7 @@ apt-get install -y wget && \
 mkdir -p /usr/bin/asset && \
 chmod -R 777 /usr/bin/asset && \
 cd /usr/bin/asset && \
-wget http://nas1.sweetmans.me/www.dbpoweramp.com/install/Asset-Linux-x64.tar.gz && \
+wget http://nas1.sweetmans.me/Asset-Linux-x64.tar.gz && \
 tar -zxvf *.gz && \
 rm *.gz && \
 apt-get purge --remove -y wget && \
