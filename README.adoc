@@ -1,0 +1,40 @@
+= Asset UPnP
+Docker support for Asset UPnP by illustrate
+
+== Description
+This project allows to run the free edition of http://www.dbpoweramp.com/asset-upnp-dlna.htm[Asset UPnP] by https://www.dbpoweramp.com/about.html[illustrate] in a Docker container.
+
+== Usage
+=== Docker Compose
+. Create a run configuration, e.g.
++
+.docker-compose.yml
+[source,yaml]
+----
+version: 2.2
+services:
+  asset-upnp:
+    image: ckware/asset-upnp
+    container_name: asset-upnp
+    volumes:
+    - "./data:/data"
+    - "./media:/media:ro"
+    network_mode: host
+    restart: unless-stopped
+    init: "true"
+----
+. Start a container:
++
+ $ docker-compose up -d
+
+=== Docker
+* Start a container:
++
+[source,sh]
+----
+$ docker run -v /opt/asset-upnp/data:/data -v /opt/asset-upnp/media:/media:ro --init --network host -d ckware/asset-upnp
+----
+
+== References
+* http://www.dbpoweramp.com/asset-upnp-dlna.htm[Asset UPnP Website]
+* https://forum.dbpoweramp.com/forumdisplay.php?57-Asset-UPnP[Asset UPnP Forum]

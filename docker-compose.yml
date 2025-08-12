@@ -1,0 +1,12 @@
+---
+version: "2.2"
+services:
+  asset-upnp:
+    image: "ckware/asset-upnp"
+    container_name: asset-upnp
+    volumes:
+    - "./data:/data"
+    - "./media:/media:ro"
+    network_mode: host
+    restart: unless-stopped
+    init: true
