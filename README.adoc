@@ -2,5 +2,5 @@
 Docker support for Asset UPnP by psweetie
 
 == Description
-This project allows to run the registered edition of http://www.dbpoweramp.com/asset-upnp-dlna.htm[Asset UPnP] by https://www.dbpoweramp.com/about.html[illustrate] in a Docker container.
+This project allows to run the registered edition of http://www.dbpoweramp.com/asset-upnp-dlna.htm[Asset UPnP] by psweetie in a Docker container.
 
