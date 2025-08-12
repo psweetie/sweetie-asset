@@ -1,6 +1,6 @@
 services:
   asset-upnp:
-    image: "ckware/asset-upnp"
+    image: "psweetie/asset-upnp"
     container_name: asset-upnp
     volumes:
     - "./data:/data"
